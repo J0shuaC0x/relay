@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: application-centre-relay
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: ROBLOX_API_KEY
+        sync: false
+      - key: GROUP_ID
+        sync: false
+      - key: SHARED_SECRET
+        sync: false
